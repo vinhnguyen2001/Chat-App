@@ -15,20 +15,12 @@ public class WebPackageConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-//        WebSocketMessageBrokerConfigurer.super.registerStompEndpoints(registry);
         registry.addEndpoint("/ws").withSockJS();
-    }
-
-
-    @Override
-    public boolean configureMessageConverters(List<MessageConverter> messageConverters) {
-        return WebSocketMessageBrokerConfigurer.super.configureMessageConverters(messageConverters);
     }
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-//        WebSocketMessageBrokerConfigurer.super.configureMessageBroker(registry);
         registry.setApplicationDestinationPrefixes("/app");
-        registry.enableSimpleBroker("/topic");
+        registry.enableSimpleBroker("/messages");
     }
 }
