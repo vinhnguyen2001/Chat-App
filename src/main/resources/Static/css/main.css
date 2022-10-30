@@ -20,24 +20,6 @@ body {
     background-color: rgb(70, 23, 143);
     height: 100%;
 }
-
-/*body:before {*/
-/*    height: 50%;*/
-/*    width: 100%;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    background: #128ff2;*/
-/*    content: "";*/
-/*    z-index: 0;*/
-/*}*/
-
-/*.clearfix:after {*/
-/*    display: block;*/
-/*    content: "";*/
-/*    clear: both;*/
-/*}*/
-
 .hidden {
     display: none;
 }
@@ -104,11 +86,9 @@ button.accent {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
-
 #username-page {
     text-align: center;
 }
-
 .username-page-container {
     background: #fefefe;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
@@ -116,7 +96,6 @@ button.accent {
     width: 100%;
     max-width: 350px;
     display: inline-block;
-    /*margin-top: 42px;*/
     vertical-align: middle;
     position: relative;
     padding:0px 20px;
@@ -298,8 +277,6 @@ button.accent {
         font-size: 1.1em;
     }
 }
-
-
 .form-login input{
     width: 100%;
     border:1px solid #333333;
